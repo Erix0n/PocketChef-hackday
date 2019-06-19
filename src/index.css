@@ -1,0 +1,27 @@
+@import "../node_modules/normalize.css/normalize.css";
+.header-bar {
+  text-align: center;
+  background-color: blue;
+  margin: 0;
+}
+.header-items-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 90vw;
+}
+.header-nav {
+  background-color: rgb(201, 196, 196);
+  padding: 5px;
+  border: 1px solid rgb(201, 196, 196);
+  border-radius: 10px;
+}
+
+.content {
+  text-align: center;
+}

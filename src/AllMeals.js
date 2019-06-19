@@ -5,16 +5,17 @@ class AllMeals extends Component {
     return (
       <div>
         <h2>All meals</h2>
-        <p>
-          Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:
-        </p>
-        <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
-        </ol>
+        <p>*Dropdown with Filters*</p>
+        <ul>
+          <h3>Hottest meals right now</h3>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+          <li>*Really hot meal*</li>
+        </ul>
       </div>
     );
   }
