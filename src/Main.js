@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Home";
-import Stuff from "./Stuff";
+import AllMeals from "./AllMeals";
 import Contact from "./Contact";
 
 class Main extends Component {
@@ -9,14 +9,14 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
+          <h1>What shoud i eat today?</h1>
           <ul className="header">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
 
             <li>
-              <NavLink to="/stuff">Stuff</NavLink>
+              <NavLink to="/AllMeals">All Meals</NavLink>
             </li>
 
             <li>
@@ -24,8 +24,8 @@ class Main extends Component {
             </li>
           </ul>
           <div className="content">
-            <Route path="/" component={Home} />
-            <Route path="/stuff" component={Stuff} />
+            <Route exact path="/" component={Home} />
+            <Route path="/AllMeals" component={AllMeals} />
             <Route path="/contact" component={Contact} />
           </div>
         </div>

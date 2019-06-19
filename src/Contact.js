@@ -4,11 +4,8 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <h2>GOT QUESTIONS?</h2>
-        <p>
-          The easiest thing to do is post on our{" "}
-          <a href="http://forum.kirupa.com">forums</a>.
-        </p>
+        <h2>Got questions?</h2>
+        <p>Send us and email at lorem@ipsum.se </p>
       </div>
     );
   }

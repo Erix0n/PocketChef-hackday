@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Notes for the app
+
+Vad ska jag äta till middag?
+
+\*Dagens tips
+
+Skapa konto:
+*Skapa veckomeny
+*Spara favoriter
+
+Filter:
+*Tid att laga
+*Kött, fisk fågel
+_Vegetariskt/veganskt
+_ Matlådekompatibel
+*Pasta/ris/potatis
+*Ish kostnad(?)
+\*Antal ingredienser/recept(?)
