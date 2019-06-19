@@ -4,16 +4,17 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h2>HELLO</h2>
+        <h2>HELLO PEASANT!</h2>
         <p>
-          Cras facilisis urna ornare ex volutpat, et convallis erat elementum.
-          Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget
-          rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec
-          molestie. Cum sociis natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus.
+          I am DineBot X2000 and my purpose here on planet Earth is to supply
+          you with an dinner plan.
         </p>
 
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+        <p>
+          Navigate to All Meals to see my whole inventory, in here you can also
+          apply a filter.
+        </p>
+        <p>Navigate to ImAPeasant if you want me to tell you what to cook</p>
       </div>
     );
   }
