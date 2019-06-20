@@ -14,15 +14,21 @@ class Main extends Component {
           <div className="header-items-container">
             <ul className="header">
               <li className="header-nav">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className="link">
+                  Home
+                </NavLink>
               </li>
 
               <li className="header-nav">
-                <NavLink to="/allmeals">All Meals</NavLink>
+                <NavLink to="/allmeals" className="link">
+                  All Meals
+                </NavLink>
               </li>
 
               <li className="header-nav">
-                <NavLink to="/random">Random Meal</NavLink>
+                <NavLink to="/random" className="link">
+                  Random Meal
+                </NavLink>
               </li>
             </ul>
           </div>

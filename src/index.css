@@ -1,9 +1,24 @@
 @import "../node_modules/normalize.css/normalize.css";
+body {
+  background-color: #ff4e56;
+  background-image: linear-gradient(
+    to bottom right,
+    #ff844f,
+    #ff7b4e,
+    #ff674e,
+    #ff4e56,
+    #f24b53
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  color: white;
+}
 .header-bar {
   text-align: center;
-  background-color: blue;
   margin: 0;
+  box-shadow: 3px 0 5px black;
 }
+
 .header-items-container {
   display: flex;
   justify-content: center;
@@ -16,10 +31,37 @@
   width: 90vw;
 }
 .header-nav {
-  background-color: rgb(201, 196, 196);
   padding: 5px;
-  border: 1px solid rgb(201, 196, 196);
-  border-radius: 10px;
+  color: #000;
+  position: relative;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav:hover {
+  color: #000;
+}
+
+.header-nav:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.header-nav:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .content {
