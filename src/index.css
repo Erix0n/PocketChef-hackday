@@ -1,69 +1,22 @@
-@import "../node_modules/normalize.css/normalize.css";
 body {
-  background-color: #ff4e56;
-  background-image: linear-gradient(
+  background-color: #fff;
+  /* background-image: linear-gradient(
     to bottom right,
     #ff844f,
     #ff7b4e,
     #ff674e,
     #ff4e56,
     #f24b53
-  );
+  ); */
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  color: white;
+  color: black;
 }
-.header-bar {
-  text-align: center;
-  margin: 0;
-  box-shadow: 3px 0 5px black;
-}
-
-.header-items-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.header {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 90vw;
-}
-.header-nav {
-  padding: 5px;
-  color: #000;
-  position: relative;
-}
-.link {
-  text-decoration: none;
-  color: white;
-}
-
-.header-nav:hover {
-  color: #000;
-}
-
-.header-nav:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.header-nav:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+* > * {
+  box-sizing: border-box;
 }
 
 .content {
+  padding-top: 90px;
   text-align: center;
 }
