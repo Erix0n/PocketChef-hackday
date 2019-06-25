@@ -76,12 +76,12 @@ class NavigationBar extends Component {
                 Menu
               </StyledButton>
             ) : (
-              <React.Fragment>
-                <StyledLink to="/">Home</StyledLink>
-                <StyledLink to="/random">Random</StyledLink>
-                <StyledLink to="/allmeals">All Meals</StyledLink>
-              </React.Fragment>
-            )}
+                <React.Fragment>
+                  <StyledLink to="/">Home</StyledLink>
+                  <StyledLink to="/random">Random</StyledLink>
+                  <StyledLink to="/allmeals">All Meals</StyledLink>
+                </React.Fragment>
+              )}
           </NavItemWrapper>
         </NavBar>
 

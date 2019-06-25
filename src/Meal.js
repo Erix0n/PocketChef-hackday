@@ -17,7 +17,7 @@ export default props => {
     window.location.href = props.meal.recipe;
   };
 
-  console.log(props);
+  // console.log(props);
 
   return (
     <MealWrapper>
