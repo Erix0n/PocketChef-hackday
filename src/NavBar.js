@@ -70,9 +70,7 @@ class NavigationBar extends Component {
           <Title>{this.state.currentTitle}</Title>
           <NavItemWrapper>
             {this.state.isMobile ? (
-              <StyledButton
-                onClick={() => this.setState({ mobileMenuOpen: true })}
-              >
+              <StyledButton onClick={() => this.setState({ mobileMenuOpen: true })}>
                 Menu
               </StyledButton>
             ) : (
@@ -89,9 +87,7 @@ class NavigationBar extends Component {
           <React.Fragment>
             <MobileMenu open={this.state.mobileMenuOpen} />
             {this.state.mobileMenuOpen && (
-              <Backdrop
-                onClick={() => this.setState({ mobileMenuOpen: false })}
-              />
+              <Backdrop onClick={() => this.setState({ mobileMenuOpen: false })} />
             )}
           </React.Fragment>
         )}

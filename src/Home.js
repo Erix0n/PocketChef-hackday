@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 // import Meal from "./Meal";
 // import {
-//   ContentWrapper,
-//   StyledButton,
-//   SecondaryButton,
-//   MealContainer
+//   HomePageDisplay,
 // } from "./styles";
 
 class Home extends Component {

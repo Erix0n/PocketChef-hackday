@@ -75,7 +75,8 @@ const VegoButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px; 
+  margin-bottom: 5px;
+  margin-right:4px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +90,8 @@ const MeatButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px; 
+  margin-bottom: 5px;
+  margin-right:4px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +105,8 @@ const SaladButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px;   
+  margin-bottom: 5px;
+  margin-right:4px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +120,8 @@ const PastaButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px;   
+  margin-bottom: 5px;
+  margin-right:4px;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +135,8 @@ const SoupButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px;   
+  margin-bottom: 5px;
+  margin-right:4px;   
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +150,8 @@ const RemoveFilterButton = styled.button`
   color: #fff;
   font-size:30px;
   padding: 8px 16px;
-  margin-bottom: 3px;   
+  margin-bottom: 5px;
+  margin-right:4px;   
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +168,15 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const MobileFilterWrapper = styled.div`
+  width: 100%;
+  max-width: 400px;
+  padding: 0 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 `;
 
 const ContentWrapper = styled.div`
@@ -252,6 +267,7 @@ export {
   SoupButton,
   RemoveFilterButton,
   StyledButton,
+  MobileFilterWrapper,
   ContentWrapper,
   MobileMenuWrapper,
   Backdrop,
