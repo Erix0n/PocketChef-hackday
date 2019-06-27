@@ -19,15 +19,10 @@ class AllMeals extends Component {
   };
 
   componentDidMount() {
-    // window.setTimeout(() => {
     fetch('http://localhost:8000/')
       .then(response => response.json())
-      .then(data => this.setState({ meals: [data.meals] })
+      .then(data => this.setState({ meals: data.meals })
       );
-
-    // }, 1000);
-
-
   }
 
   renderMeals = () => {
@@ -37,8 +32,6 @@ class AllMeals extends Component {
       });
     } else {
       return this.state.meals.map((meal) => {
-        console.log(this.state.meals);
-        console.log(meal.meal.id);
         return <Meal meal={meal} key={meal.id} />;
       });
     }

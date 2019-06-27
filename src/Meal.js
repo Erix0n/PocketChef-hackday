@@ -18,14 +18,15 @@ export default props => {
   };
 
   console.log(props);
-  console.log(props.meal.tags);
 
   return (
     <MealWrapper>
       <MealImage img={props.meal.img} />
       <MealInfo>
+        {/* Add styled h3 or h4 tag instead of span */}
         <span>{props.meal.name}</span>
-        {renderTags()}
+        <span>Cooking time: {props.meal.cooktime}</span>
+        <span>Tags: {renderTags()}</span>
         <StyledButton onClick={() => goToRecipe()}>Show recipe</StyledButton>
       </MealInfo>
     </MealWrapper>
