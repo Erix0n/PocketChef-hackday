@@ -36,11 +36,11 @@ class NavigationBar extends Component {
   getCurrentTitle = () => {
     let title;
     switch (this.props.location.pathname) {
-      case "/allmeals":
+      case "/":
         title = "All meals";
         break;
-      case "/":
-        title = "Home";
+      case "/addrecipe":
+        title = "Add recipe";
         break;
       case "/random":
         title = "Random meal";
@@ -75,9 +75,9 @@ class NavigationBar extends Component {
               </StyledButton>
             ) : (
                 <React.Fragment>
-                  <StyledLink to="/">Home</StyledLink>
-                  <StyledLink to="/random">Random</StyledLink>
-                  <StyledLink to="/allmeals">All Meals</StyledLink>
+                  <StyledLink to="/">All Meals</StyledLink>
+                  <StyledLink to="/addrecipe">Add recipe</StyledLink>
+                  <StyledLink to="/random">Random meal</StyledLink>
                 </React.Fragment>
               )}
           </NavItemWrapper>

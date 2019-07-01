@@ -5,9 +5,9 @@ import { MobileMenuWrapper, StyledLink } from "./styles";
 export default props => {
   return (
     <MobileMenuWrapper open={props.open}>
-      <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/random">Random</StyledLink>
-      <StyledLink to="/allmeals">All Meals</StyledLink>
+      <StyledLink to="/">All Meals</StyledLink>
+      <StyledLink to="/addrecipe">Add Recipe</StyledLink>
+      <StyledLink to="/random">Random meal</StyledLink>
     </MobileMenuWrapper>
   );
 };

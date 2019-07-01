@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
-import Home from "./Home";
+import AddRecipe from "./AddRecipes/AddRecipe";
 import AllMeals from "./AllMeals";
 import Random from "./Random";
 import NavBar from "./NavBar.js";
@@ -13,8 +13,8 @@ class Main extends Component {
       <HashRouter>
         <NavBar />
         <div className="content">
-          <Route exact path="/" component={Home} />
-          <Route path="/allmeals" component={AllMeals} />
+          <Route exact path="/" component={AllMeals} />
+          <Route path="/addrecipe" component={AddRecipe} />
           <Route path="/random" component={Random} />
         </div>
       </HashRouter>

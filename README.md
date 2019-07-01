@@ -1,87 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# &lt;/salt&gt;
 
-## Available Scripts
+## Individual hack day!
 
-In the project directory, you can run:
+Today you will spend the entire day individually to scope, create and finish a small project.
 
-### `npm start`
+It is important that you stay on Epicenter when doing your projects. If you're not at the office, slack us your location so that we can pay you a visit!
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Instructions:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+You are supposed to code something on your own. It is OK to find inspiration from sources online as long as the end result is something unique. Making a carbon copy (or a copy with minimal changes) is __not__ OK.
 
-### `npm test`
+Remember that you should scope it in a way that you think you can complete this in one day.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You are allowed to use any techniques that we have used so far in this course. It is not necessary to build a fullstack application, you may focus on only the frontend or backend. If you want to explore something new, talk to us first.
 
-### `npm run build`
+If your main focus is about the graphical interface, user interaction and UX, we kindly ask you to stay away from Twitter Bootstrap.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you want to co-operate in pairs and build one part each of a larger application, come talk to us first. Pair programming is not allowed in this exercise, but we might be able to find a solution if you have a really good idea that can be clearly separated into two parts.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Create a new branch named after yourself and work in this. In the event you have a code base or dev environment you want to start out with, you __need__ to check this in before you start.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+__VERY important__: Push your solutions to GitHub on a regular basis. As soon as you have something new that works - commit with a descriptive comment and push! Before you go home for the day, push everything you got.
 
-### `npm run eject`
+__VERY VERY important__: You need to have something to present. It is not acceptable to have a non-working half-measure of an application just because you didn't scope properly. The key to not ending up in this situation is to work agile - take small steps, have something that actually works early in the game.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Presentation
+Everyone will get to present their work in front of part of the class. This will take place during Friday. You will have 7 minutes each, including 1 minute Q&A!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
+We are looking forward to see what amazing things you come up with!
 ### Notes for the app
 
-Vad ska jag äta till middag?
+Dinner and recipe tips app - EasyChef
 
-\*Dagens tips
+\*Tip of the day(random)
 
-Skapa konto:
-*Skapa veckomeny
-*Spara favoriter
 
 Filter:
-*Tid att laga
-*Kött, fisk fågel
-_Vegetariskt/veganskt
-_ Matlådekompatibel
-*Pasta/ris/potatis
-*Ish kostnad(?)
-\*Antal ingredienser/recept(?)
+*Cooking time
+*Meat, Fish, chicken, Vegitarian, vegan, foodboxcompatible, pasta, rice, potato
+Link to recipe
+\*

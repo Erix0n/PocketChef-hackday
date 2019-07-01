@@ -9,6 +9,9 @@ const NavBarWrapper = styled.div`
   display: flex;
   justify-content: center;
   box-shadow: 2px 2px 8px #d2d2d2;
+  position:fixed;
+  top:0;
+  left:0;
 `;
 
 const NavBar = styled.div`
@@ -58,6 +61,20 @@ const Title = styled.div`
   color: palevioletred;
 `;
 
+const Label = styled.div`
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: palevioletred;
+`;
+
+const Text = styled.div`
+  font-weight: 400;
+  text-align:left;
+  margin-bottom: 2px;
+  color: black;
+`;
+
 const NavItemWrapper = styled.div`
   height: 100%;
   display: flex;
@@ -67,72 +84,12 @@ const NavItemWrapper = styled.div`
   }
 `;
 
-const VegoButton = styled.button`
+const FilterButton = styled.button`
   outline: none;
-  border: 2px solid #91581b;
+  border: 2px solid ${props => props.borderColor};
   border-radius: 5px;
   background-color: #fff;
-  color: #fff;
-  font-size:30px;
-  padding: 8px 16px;
-  margin-bottom: 5px;
-  margin-right:4px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const MeatButton = styled.button`
-  outline: none;
-  border: 2px solid #b70e0e;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #fff;
-  font-size:30px;
-  padding: 8px 16px;
-  margin-bottom: 5px;
-  margin-right:4px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const SaladButton = styled.button`
-  outline: none;
-  border: 2px solid #06d61e;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #fff;
-  font-size:30px;
-  padding: 8px 16px;
-  margin-bottom: 5px;
-  margin-right:4px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const PastaButton = styled.button`
-  outline: none;
-  border: 2px solid #e8d71e;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #fff;
-  font-size:30px;
-  padding: 8px 16px;
-  margin-bottom: 5px;
-  margin-right:4px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const SoupButton = styled.button`
-  outline: none;
-  border: 2px solid #187cbf;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #fff;
+  color: black;
   font-size:30px;
   padding: 8px 16px;
   margin-bottom: 5px;
@@ -140,6 +97,10 @@ const SoupButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${props => props.active && css`
+    background-color: rgba(219, 112, 147, .6);
+  `}
 `;
 
 const RemoveFilterButton = styled.button`
@@ -168,6 +129,10 @@ const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${p => p.fillWidth && css`
+      width: 100%;
+  `}
 `;
 
 const MobileFilterWrapper = styled.div`
@@ -259,12 +224,10 @@ export {
   NavBarWrapper,
   StyledLink,
   Title,
+  Label,
+  Text,
   NavItemWrapper,
-  VegoButton,
-  MeatButton,
-  SaladButton,
-  PastaButton,
-  SoupButton,
+  FilterButton,
   RemoveFilterButton,
   StyledButton,
   MobileFilterWrapper,

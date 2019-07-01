@@ -1,81 +1,354 @@
 {
-  "meals": [
-    {
-      "id": 1,
-      "tags": [
-        "vego",
-        "green"
-      ],
-      "name": "Vegobullar med vitlöksyogurt och fetaost",
-      "cooktime": "Under 45 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_104007/cf_259/vegobullar-med-feta-och-vitloksyoghurt-v45-2014-71.jpg",
-      "recipe": "https://www.ica.se/halsa/recept/vegobullar-med-vitloksyoghurt-och-fetaost-718183/"
-    },
-    {
-      "id": 2,
-      "tags": [
-        "vego",
-        "soup"
-      ],
-      "name": "Italiensk bondsoppa",
-      "cooktime": "Under 15 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_193184/cf_259/italiensk-bondsoppa-725138-stor.jpg",
-      "recipe": "https://www.ica.se/recept/italiensk-bondsoppa-725138/"
-    },
-    {
-      "id": 3,
-      "tags": [
-        "meat",
-        "potato"
-      ],
-      "name": "Hamburgare med pommes",
-      "cooktime": "Under 45 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_42426/cf_259/hamburgare-714159.jpg",
-      "recipe": "https://www.ica.se/recept/hamburgare-714159/"
-    },
-    {
-      "id": 4,
-      "tags": [
-        "meat",
-        "salad"
-      ],
-      "name": "Ceasarsallad med bacon",
-      "cooktime": "Under 30 minutes",
-      "img": "https://mittkok.expressen.se/wp-content/uploads/2014/03/fotolia_157570276_subscription_monthly_m-700x700.jpg",
-      "recipe": "https://www.ica.se/recept/caesarsallad-695632/"
-    },
-    {
-      "id": 5,
-      "tags": [
-        "vego",
-        "salad"
-      ],
-      "name": "Falafelbowl med hummus",
-      "cooktime": "Under 15 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_194373/cf_259/falafelbowl-med-hummus-725213-stor.jpg",
-      "recipe": "https://www.ica.se/recept/falafelbowl-med-hummus-725213/"
-    },
-    {
-      "id": 6,
-      "tags": [
-        "pasta",
-        "meat"
-      ],
-      "name": "Pasta med bacon och majs",
-      "cooktime": "Under 15 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_176277/cf_259/supersnabb-pasta-med-bacon-och-majs-723149-ny_580x.jpg",
-      "recipe": "https://www.ica.se/recept/supersnabb-pasta-med-bacon-och-majs-723149/"
-    },
-    {
-      "id": 7,
-      "tags": [
-        "pasta",
-        "meat"
-      ],
-      "name": "Lasagne med mozzarella",
-      "cooktime": "Under 45 minutes",
-      "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_192950/cf_259/lasagne-med-mozzarella-b-v5-724541.jpg",
-      "recipe": "https://www.ica.se/recept/lasagne-med-mozzarella-724541/"
-    }
-  ]
+    "meals": [
+        {
+            "id": 1,
+            "tags": [
+                "vego",
+                "green",
+                "45min"
+            ],
+            "name": "Vegobullar med vitlöksyogurt och fetaost",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_104007/cf_259/vegobullar-med-feta-och-vitloksyoghurt-v45-2014-71.jpg",
+            "recipe": "https://www.ica.se/halsa/recept/vegobullar-med-vitloksyoghurt-och-fetaost-718183/"
+        },
+        {
+            "id": 2,
+            "tags": [
+                "vego",
+                "soup",
+                "15min"
+            ],
+            "name": "Italiensk bondsoppa",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_193184/cf_259/italiensk-bondsoppa-725138-stor.jpg",
+            "recipe": "https://www.ica.se/recept/italiensk-bondsoppa-725138/"
+        },
+        {
+            "id": 3,
+            "tags": [
+                "meat",
+                "potato",
+                "45min"
+            ],
+            "name": "Hamburgare med pommes",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_42426/cf_259/hamburgare-714159.jpg",
+            "recipe": "https://www.ica.se/recept/hamburgare-714159/"
+        },
+        {
+            "id": 4,
+            "tags": [
+                "meat",
+                "salad",
+                "30min"
+            ],
+            "name": "Ceasarsallad med bacon",
+            "cooktime": "Under 30 minutes",
+            "img": "https://mittkok.expressen.se/wp-content/uploads/2014/03/fotolia_157570276_subscription_monthly_m-700x700.jpg",
+            "recipe": "https://www.ica.se/recept/caesarsallad-695632/"
+        },
+        {
+            "id": 5,
+            "tags": [
+                "vego",
+                "salad",
+                "15min"
+            ],
+            "name": "Falafelbowl med hummus",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_194373/cf_259/falafelbowl-med-hummus-725213-stor.jpg",
+            "recipe": "https://www.ica.se/recept/falafelbowl-med-hummus-725213/"
+        },
+        {
+            "id": 6,
+            "tags": [
+                "pasta",
+                "meat",
+                "15min"
+            ],
+            "name": "Pasta med bacon och majs",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_176277/cf_259/supersnabb-pasta-med-bacon-och-majs-723149-ny_580x.jpg",
+            "recipe": "https://www.ica.se/recept/supersnabb-pasta-med-bacon-och-majs-723149/"
+        },
+        {
+            "id": 7,
+            "tags": [
+                "pasta",
+                "meat",
+                "45min"
+            ],
+            "name": "Lasagne med mozzarella",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_192950/cf_259/lasagne-med-mozzarella-b-v5-724541.jpg",
+            "recipe": "https://www.ica.se/recept/lasagne-med-mozzarella-724541/"
+        },
+        {
+            "id": 8,
+            "tags": [
+                "vego",
+                "15min"
+            ],
+            "name": "Tortillas med linser",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_193177/cf_259/tortillas-med-linser-morotskram-och-graddfil-72513.jpg",
+            "recipe": "https://www.ica.se/recept/tortillas-med-linser-morotskram-och-graddfil-725137/"
+        },
+        {
+            "id": 9,
+            "tags": [
+                "vego",
+                "salad",
+                "15min"
+            ],
+            "name": "Bakad sötpotatis med feta och oliver",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_176365/cf_259/bakad-sotpotatis-med-olivrora-723318-stor.jpg",
+            "recipe": "https://www.ica.se/recept/bakad-sotpotatis-med-feta-och-oliver-723318/"
+        },
+        {
+            "id": 10,
+            "tags": [
+                "salad",
+                "vego",
+                "15min"
+            ],
+            "name": "Quinoa- och bulgursallad",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_21266/cf_259/bulgur-och-quinoasallad.jpg",
+            "recipe": "https://www.ica.se/recept/quinoa-och-bulgursallad-med-primorer-712601/"
+        },
+        {
+            "id": 11,
+            "tags": [
+                "soup",
+                "15min"
+            ],
+            "name": "Spenatsoppa med ost",
+            "cooktime": "Under 15 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_17663/cf_259/659597-spenatsoppa_med_ost-spenatsoppa_b0209.jpg",
+            "recipe": "https://www.ica.se/recept/spenatsoppa-med-ost-659597/"
+        },
+        {
+            "id": 12,
+            "tags": [
+                "meat",
+                "30min"
+            ],
+            "name": "Kryddstekt kyckling med coleslaw",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_121934/cf_259/kryddstekt-kyckling-med-coleslaw-bistro-v36b-71929.jpg",
+            "recipe": "https://www.ica.se/recept/kryddstekt-kyckling-med-coleslaw-719290/"
+        },
+        {
+            "id": 13,
+            "tags": [
+                "45min"
+            ],
+            "name": "Pannkakor - grundsmet",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_76244/cf_259/pannkakor-grundsmet-2083.jpg",
+            "recipe": "https://www.ica.se/recept/pannkakor-grundsmet-2083/"
+        },
+        {
+            "id": 14,
+            "tags": [
+                "meat",
+                "30min"
+            ],
+            "name": "Nudelwok med kål och sidfläsk",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_108399/cf_259/nudelwok-med-kal-och-sidflask-718459.png",
+            "recipe": "https://www.ica.se/recept/nudelwok-med-kal-och-sidflask-718459/"
+        },
+        {
+            "id": 15,
+            "tags": [
+                "rice",
+                "meat",
+                "30min"
+            ],
+            "name": "Korvstroganoff med ris",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_182629/cf_259/korvstrognoff-med-ris-533512_2000x1200.jpg",
+            "recipe": "https://www.ica.se/recept/korvstroganoff-med-ris-533512/"
+        },
+        {
+            "id": 16,
+            "tags": [
+                "meat",
+                "30min"
+            ],
+            "name": "Chili con carne",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_15090/cf_259/433075-chili_con_carne-chiliconcarne_b0805.jpg",
+            "recipe": "https://www.ica.se/recept/chili-con-carne-433075/"
+        },
+        {
+            "id": 17,
+            "tags": [
+                "soup",
+                "meat",
+                "30min"
+            ],
+            "name": "Minestronesoppa",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_62803/cf_259/minestronesoppa-715569.jpg",
+            "recipe": "https://www.ica.se/recept/minestronesoppa-715569/"
+        },
+        {
+            "id": 18,
+            "tags": [
+                "pasta",
+                "vego",
+                "30min"
+            ],
+            "name": "Auberginepasta med tomat och örter",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_105664/cf_259/auberginepasta-med-tomat-och-orter-v48-2014-718291.jpg",
+            "recipe": "https://www.ica.se/recept/auberginepasta-med-tomat-och-orter-718291/"
+        },
+        {
+            "id": 19,
+            "tags": [
+                "soup",
+                "30min"
+            ],
+            "name": "Tomatsoppa",
+            "cooktime": "Under 30 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_160955/cf_259/tomatsoppa-722050_2000x1200.jpg",
+            "recipe": "https://www.ica.se/recept/tomatsoppa-722050/"
+        },
+        {
+            "id": 20,
+            "tags": [
+                "pasta",
+                "vego",
+                "45min"
+            ],
+            "name": "Linsbolognese med spaghetti",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_171128/cf_259/linsbolognese-med-spaghetti-723032.jpg",
+            "recipe": "https://www.ica.se/recept/linsbolognese-med-spaghetti-723032/"
+        },
+        {
+            "id": 21,
+            "tags": [
+                "vego",
+                "45min"
+            ],
+            "name": "Black Bean Burger",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_181212/cf_259/black-bean-burger-723911-stor.jpg",
+            "recipe": "https://www.ica.se/recept/black-bean-burger-723911/"
+        },
+        {
+            "id": 22,
+            "tags": [
+                "pasta",
+                "vego",
+                "45min"
+            ],
+            "name": "Vegansk lasagne med linser och tomat",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_186394/cf_259/vegetarisk-lasange-med-linser-och-tomat_724343.jpg",
+            "recipe": "https://www.ica.se/recept/vegansk-lasagne-med-linser-och-tomat-724343/"
+        },
+        {
+            "id": 23,
+            "tags": [
+                "pasta",
+                "vego",
+                "45min"
+            ],
+            "name": "Fajitas med rostade grönsaker, svarta bönor och guacamole",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_184673/cf_259/fajitas-med-rostade-gronsaker-svarta-bonor-och-gua.jpg",
+            "recipe": "https://www.ica.se/recept/fajitas-med-rostade-gronsaker-svarta-bonor-och-guacamole-724204/"
+        },
+        {
+            "id": 24,
+            "tags": [
+                "vego",
+                "45min"
+            ],
+            "name": "Morots- och halloumibiffar",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_143529/cf_259/morots-och-halloumibiffar-720975-stor.jpg",
+            "recipe": "https://www.ica.se/recept/morots-och-halloumibiffar-720975/"
+        },
+        {
+            "id": 25,
+            "tags": [
+                "potato",
+                "fish",
+                "45min"
+            ],
+            "name": "Lax med ljummen potatissallad",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_114306/cf_259/lax-med-ljummen-potatissallad-v17-2015-718918.jpg",
+            "recipe": "https://www.ica.se/recept/lax-med-ljummen-potatissallad-718918/"
+        },
+        {
+            "id": 26,
+            "tags": [
+                "fish",
+                "potato",
+                "45min"
+            ],
+            "name": "Currypanerad rödspätta med krämig räk- och dillröra",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_35907/cf_259/currypanerad-rodspatta-med-kramig-rak-och-dillrora.jpg",
+            "recipe": "https://www.ica.se/recept/currypanerad-rodspatta-med-kramig-rak-och-dillrora-713682/"
+        },
+        {
+            "id": 27,
+            "tags": [
+                "pasta",
+                "meat",
+                "45min"
+            ],
+            "name": "Mustiga köttbullar i tomatsås",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_116896/cf_259/mustiga-kottbullar-i-tomtsas-v22-2015-719030.jpg",
+            "recipe": "https://www.ica.se/recept/mustiga-kottbullar-i-tomatsas-719030/"
+        },
+        {
+            "id": 28,
+            "tags": [
+                "pasta",
+                "meat",
+                "45min"
+            ],
+            "name": "Röd currygryta",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_73861/cf_259/rod-currygryta-716262-v17-2013.jpg",
+            "recipe": "https://www.ica.se/recept/rod-currygryta-716262/"
+        },
+        {
+            "id": 29,
+            "tags": [
+                "soup",
+                "meat",
+                "45min"
+            ],
+            "name": "Gulaschsoppa med vitlökskräm och scones",
+            "cooktime": "Under 45 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_63563/cf_259/gulaschsoppa_med_vitl-kskr-m_och_scones-714764.jpg",
+            "recipe": "https://www.ica.se/recept/gulaschsoppa-med-vitlokskram-och-scones-714764/"
+        },
+        {
+            "id": 30,
+            "tags": [
+                "rice",
+                "fish",
+                "60min"
+            ],
+            "name": "Sushirullar med wasabimajonnäs",
+            "cooktime": "Under 75 minutes",
+            "img": "https://assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_114469/cf_259/sushirullar-med-wasabimajonnas-718876-stor.jpg",
+            "recipe": "https://www.ica.se/recept/sushirullar-med-wasabimajonnas-718876/"
+        }
+    ]
 }

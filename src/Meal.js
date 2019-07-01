@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MealWrapper, MealImage, MealInfo, StyledButton } from "./styles";
+import { Text, MealWrapper, MealImage, MealInfo, StyledButton } from "./styles";
 
 export default props => {
   const renderTags = () => {
@@ -17,16 +17,14 @@ export default props => {
     window.location.href = props.meal.recipe;
   };
 
-  console.log(props);
-
   return (
     <MealWrapper>
       <MealImage img={props.meal.img} />
       <MealInfo>
-        {/* Add styled h3 or h4 tag instead of span */}
-        <span>{props.meal.name}</span>
-        <span>Cooking time: {props.meal.cooktime}</span>
-        <span>Tags: {renderTags()}</span>
+        <Text>{props.meal.name}</Text>
+        <Text>Cooking time: {props.meal.cooktime}</Text>
+        <Text>Tags: {renderTags()}</Text>
+        <br></br>
         <StyledButton onClick={() => goToRecipe()}>Show recipe</StyledButton>
       </MealInfo>
     </MealWrapper>
