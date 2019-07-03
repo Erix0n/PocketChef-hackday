@@ -18,24 +18,7 @@ function createShortuuid() {
 async function readRecipe() {
 
     const data = await promiseReadFile('./db/addedRecipe.json', 'utf8');
-    console.log(data);
-}
-
-function addRecipe(key, value) {
-    const id = key.split(':')[1];
-    const user = key.split(':')[0];
-    const newKey = 'db/' + user + '.json';
-    fs.readFile(newKey, (err, data) => {
-        if (err) throw err;
-        const dbObject = JSON.parse(data);
-
-        dbObject[id] = value.rating;
-        try {
-            fs.writeFileSync(newKey, JSON.stringify(dbObject));
-        } catch (e) {
-            return console.log(e);
-        }
-    });
+    return JSON.parse(data);
 }
 
 app.use(function (req, res, next) {
@@ -61,12 +44,12 @@ app.post('/addrecipe', async function (req, res) {
     const id = createShortuuid();
     const data = req.body;
     data.id = id;
-    console.log(data);
 
-    readRecipe();
     try {
-        fs.writeFileSync('./db/addedRecipe.json', JSON.stringify(data));
-        res.send({ response: 'OK' })
+        const dataFromDB = await readRecipe();
+        dataFromDB.testing.push(data);
+        fs.writeFileSync('./db/addedRecipe.json', JSON.stringify(dataFromDB));
+        res.send({ response: 'OK', data })
     } catch (e) {
         console.error(e);
         res.send({ error: '500' })

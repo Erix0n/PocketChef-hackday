@@ -60,7 +60,12 @@ class AllMeals extends Component {
     const activeFilters = this.state.activeFilters;
 
     if (activeFilters.includes(filter)) {
-      activeFilters.pop(filter);
+      const index = activeFilters.indexOf(filter);
+
+      if (index !== -1) {
+        activeFilters.splice(index, 1);
+      }
+
     } else {
       activeFilters.push(filter);
     }
