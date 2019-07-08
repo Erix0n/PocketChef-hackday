@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-// import Recipe from "../Recipe";
+import RecipeMeal from "./RecipeMeal";
 import { InputWrapper, StyledInput, InputLabel, ContentWrapper } from './styles';
-import { StyledButton } from '../styles';
 import {
-  Title, MealContainer,
+  Title,
+  MealContainer,
+  StyledButton,
 } from "../styles";
 
 class AddRecipe extends Component {
@@ -14,8 +15,26 @@ class AddRecipe extends Component {
       imgUrl: '',
       tags: [],
       url: ''
-    }
+    },
+    meals: []
   };
+
+  componentDidMount() {
+    fetch('http://localhost:8000/addrecipe')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetch request');
+        this.setState({ meals: data.meals })
+        console.log(this.state.meals);
+      });
+  }
+
+  renderMeals = () => {
+    return this.state.meals.map((meal) => {
+      return <RecipeMeal meal={meal} key={meal.id} />;
+    });
+  }
+
 
   handleSubmit = event => {
     event.preventDefault();
@@ -32,8 +51,6 @@ class AddRecipe extends Component {
       .then(res => res.json())
       .then(data => console.log({ data }))
       .catch(err => console.error(err))
-
-
   }
 
   handleInput = event => {
@@ -43,9 +60,11 @@ class AddRecipe extends Component {
 
     formData[name] = value;
 
+    this.setState({ meals: formData })
     this.setState({ formData })
-  }
 
+  }
+  // NÄR MAN SUBMITAR SÅ LÄGGER JAG TILL I STATE DET MAN POSTAR SÅ DET RENDERAS UT DIREKT
 
   render() {
     return (
@@ -77,9 +96,9 @@ class AddRecipe extends Component {
           </InputWrapper>
 
           <StyledButton fillWidth style={{ marginTop: '30px', marginBottom: '30px' }} type="submit">Add recipe</StyledButton>
-          <Title>Your added recipes</Title>
-          <MealContainer></MealContainer>
         </form>
+        <Title>Your added recipes</Title>
+        <MealContainer>{this.state.meals.length > 0 && this.renderMeals()}</MealContainer>
       </ContentWrapper >
     );
   }

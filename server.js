@@ -40,14 +40,20 @@ app.get('/random', async function (req, res) {
     res.send(randomItem);
 });
 
+app.get('/addrecipe', async function (req, res) {
+    const dataFromDB = await readRecipe();
+    res.send(dataFromDB);
+});
+
 app.post('/addrecipe', async function (req, res) {
     const id = createShortuuid();
     const data = req.body;
+    console.log(data);
     data.id = id;
 
     try {
         const dataFromDB = await readRecipe();
-        dataFromDB.testing.push(data);
+        dataFromDB.meals.push(data);
         fs.writeFileSync('./db/addedRecipe.json', JSON.stringify(dataFromDB));
         res.send({ response: 'OK', data })
     } catch (e) {

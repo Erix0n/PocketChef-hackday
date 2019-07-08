@@ -1,22 +1,42 @@
 {
-    "testing": [
-        {
-            "id": 1,
-            "text": "testing"
-        },
-        {
-            "testing": "testing again"
-        },
-        {
-            "testing": "testing again"
-        },
+    "meals": [
         {
             "title": "Cookies",
             "cookTime": "45min",
             "imgUrl": "https://images-gmi-pmc.edge-generalmills.com/095d9d07-e4fb-4404-af61-b01490059114.jpg",
-            "tags": "cookies",
             "url": "https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57",
             "id": "b025714c"
+        },
+        {
+            "title": "Bulgur med sås",
+            "cookTime": "45min",
+            "imgUrl": "google.com/bulgurmedsas",
+            "url": "google.com",
+            "id": "dc73fb85"
+        },
+        {
+            "title": "Peanut-butter cookies",
+            "cookTime": "120 min",
+            "imgUrl": "https://images-gmi-pmc.edge-generalmills.com/dd2074e6-1a79-43e1-84ac-a206c40fbfda.jpg",
+            "tags": [],
+            "url": "https://www.bettycrocker.com/recipes/chocolate-chip-peanut-butter-bars/a2a396c6-6332-46f3-80fd-dc4af5311b5d",
+            "id": "828bd964"
+        },
+        {
+            "title": "helgas köttbullar",
+            "cookTime": "20min",
+            "imgUrl": "google.com/kottbullarfranhelga",
+            "tags": [],
+            "url": "google.com/kottbullar",
+            "id": "f8e53760"
+        },
+        {
+            "title": "Meatballs",
+            "cookTime": "15min",
+            "imgUrl": "Google.com/img2",
+            "tags": [],
+            "url": "Google.com",
+            "id": "88dc19d4"
         }
     ]
 }

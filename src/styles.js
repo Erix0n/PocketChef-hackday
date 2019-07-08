@@ -101,6 +101,12 @@ const FilterButton = styled.button`
   ${props => props.active && css`
     background-color: rgba(219, 112, 147, .6);
   `}
+  @media (max-width: 768px){
+    max-width: 30%;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 1%;
+  }
 `;
 
 const RemoveFilterButton = styled.button`

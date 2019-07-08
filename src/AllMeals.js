@@ -87,13 +87,13 @@ class AllMeals extends Component {
         <Label>List of all meals:</Label>
         <MobileFilterWrapper>
           <FilterButton active={this.state.activeFilters.includes('15min')} borderColor="#187cbf" onClick={() => this.toggleFilter("15min")}>
-            <span role="img" aria-label="15min">1️5️</span>
+            <span role="img" aria-label="15min">15</span>
           </FilterButton>
           <FilterButton active={this.state.activeFilters.includes('45min')} borderColor="#187cbf" onClick={() => this.toggleFilter("45min")}>
-            <span role="img" aria-label="45min">4️5️</span>
+            <span role="img" aria-label="45min">45</span>
           </FilterButton>
           <FilterButton active={this.state.activeFilters.includes('60min')} borderColor="#187cbf" onClick={() => this.toggleFilter("60min")}>
-            <span role="img" aria-label="60min">6️0️</span>
+            <span role="img" aria-label="60min">60</span>
           </FilterButton>
           <FilterButton active={this.state.activeFilters.includes('vego')} borderColor="#91581b" onClick={() => this.toggleFilter("vego")}>
             <span role="img" aria-label="vego">🍄</span>
